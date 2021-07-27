@@ -57,7 +57,7 @@ CREATE TABLE Answer(
 );
 CREATE TABLE Exam(
 	exam_id 	INT,
-    code 		INT,
+		code 		INT,
     tilte 		NVARCHAR(10),
     category_id INT,
     duration 	TIME,
