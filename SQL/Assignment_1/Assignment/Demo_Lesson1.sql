@@ -3,10 +3,10 @@ USE Sale_Management;
 
 CREATE TABLE CUSTOMERS (
 	customer_id 			INT,
-    	first_name				VARCHAR(50),
-    	last_name				VARCHAR(50),
-    	email					VARCHAR(50),
-    	numbers_of_complains 	INT
+    first_name				VARCHAR(50),
+    last_name				VARCHAR(50),
+    email					VARCHAR(50),
+    numbers_of_complains 	INT
 );
 
 CREATE TABLE SALES (
