@@ -7,7 +7,7 @@ USE SQL_Assignment1;
 DROP TABLE IF EXISTS Department;
 CREATE TABLE Department (
 	department_id 	TINYINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    department_name	NVARCHAR(50) NOT NULL UNIQUE KEY
+    department_name	NVARCHAR(50) NOT NULL UNIQUE KEY 
 );
 
 -- create table: Position
@@ -27,7 +27,7 @@ CREATE TABLE `Account` (
     department_id 	TINYINT UNSIGNED NOT NULL,
     position_id		TINYINT UNSIGNED NOT NULL,
     create_date 	DATETIME DEFAULT NOW(),
-    FOREIGN KEY (department_id) REFERENCES Department (department_id),
+    FOREIGN KEY (department_id) REFERENCES Department (department_id) ON UPDATE CASCADE,
     FOREIGN KEY (position_id) REFERENCES `Position` (position_id)
 );
 
